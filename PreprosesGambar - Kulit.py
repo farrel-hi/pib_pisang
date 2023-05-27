@@ -87,7 +87,7 @@ for n in gambar:
     #if not os.path.exists(alamato+namakd2[0]+ "_" + namakd2[1]+'\\'):
     #   os.makedirs(alamato+namakd2[0]+ "_" + namakd2[1] + '\\') #45 Kelas - Binatang
     img = io.imread(alamatinput + gambar[urutan], as_gray=False)
-    img = transform.resize(img, (200, 200), anti_aliasing=True)
+    img = transform.resize(img, (100, 100), anti_aliasing=True)
     img = exposure.rescale_intensity(img, in_range=(0, 1))
 
     #=======================SETTINGS=====================================
@@ -96,7 +96,7 @@ for n in gambar:
 
     #img = cv2.filter2D(src=img, ddepth=-1, kernel=sharpening_kernel) #Sharpening Using Custom Kernel (SUCK)
 
-    img = exposure.equalize_adapthist(util.img_as_ubyte(img), clip_limit=0.03) #CLAHE (Equalizer)
+    # img = exposure.equalize_adapthist(util.img_as_ubyte(img), clip_limit=0.03) #CLAHE (Equalizer)
 
     #img = util.img_as_ubyte(img) #OPSIONAL (JIKA PERLU)
 
@@ -139,7 +139,8 @@ for n in gambar:
     print(elev.dtype)
 
 
-    imglabe= elev
+    # imglabe= elev
+    imglabe = img
     print(imglabe.dtype)
     print(imglabe.shape)
     print(imglabe.size)
@@ -147,8 +148,8 @@ for n in gambar:
     print("Values min/max", imglabe.min(),imglabe.max())
 
     #==========
-    sca = [125, 130, 135, 140, 145]
-    rot = [15, 75, 105, 175, 205]
+    sca = [125, 129, 133, 137]
+    rot = [75, 105, 175, 195]
     print(rot[1])
 
     for i in range(len(rot)):  # Rotasi
