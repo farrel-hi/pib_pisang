@@ -1,0 +1,19 @@
+Original:
+- Total Class (Types of Banana): 9 Class
+- Total Images: 
+Ambon (13) + 
+Barangan (105) + 
+Cavendish (9 from Internet + 81 from direct photo = 90 Total) + 
+Kepok (28) + 
+Raja Bulu (22) + 
+Uli (100)  +
+Emas (64) +
+Raja Sereh (27)
+Tanduk (20)
+= 469 Images
+
+Setelah di preproses menggunakan algoritma Varyl, hasilnya menjadi seperti berikut:
+- 7504 Total Gambar, 1 Gambar di Preproses 16x (Kombinasi dari Scale (125%,129%,133%,137%) & Rotasi (75,105,175,195)).
+- 9 Jenis Pisang (Ambon: 208, Barangan: 1608, Cavendish: 1440, Kepok: 448, Raja Buluh: 352, Uli: 1600, Emas: 1024, Raja Sereh: 432, Tanduk: 320)
+- 10.9 MB total semua 7504 gambar
+- Dimensi Gambar: 100x100
